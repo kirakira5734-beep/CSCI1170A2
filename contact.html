@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Guide To Android Development</title>
+    <link rel="icon" href="assets/favicon/favi.jpeg">
+     <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/bgm.css">
+    <link rel="stylesheet" href="css/pic.css">
+</head>
+
+<body>
+
+    <table width="100%">
+        <tr>
+            <td>
+                <h2>Guide To Android Development</h2>
+            </td>
+            <td align="right">
+                <a href="index.html">Home</a> |
+                <a href="procedure.html">Procedure</a> |
+                <a href="tools.html">Tools</a> |
+
+                <img id="bgmBtn"
+                     src="assets/volume-off.png"
+                     alt="BGM Control">
+            </td>
+        </tr>
+    </table>
+
+    <div class="theme-panel">
+        <p>Theme:</p>
+        <button class="theme-btn" data-theme="theme1">Red</button>
+        <button class="theme-btn" data-theme="theme2">Gray</button>
+        <button class="theme-btn" data-theme="theme3">Green</button>
+    </div>
+
+    <hr>
+
+    <h1>Contact Information</h1>
+
+    <p>
+        If you would like to learn more about Android development or discuss collaboration opportunities,
+        please feel free to reach out through the following contact methods.
+    </p>
+
+    <ul>
+        <li>
+            Email:
+            <a href="mailto:yn607642@dal.ca">
+                yn607642@dal.ca
+            </a>
+        </li>
+
+        <li>
+            Phone:
+            123-456-7890
+        </li>
+    </ul>
+
+    <br>
+
+    <h3>Professional Focus</h3>
+
+    <p>
+        I am currently focused on Android application development,
+        including UI design, backend integration with Firebase,
+        and application testing using Espresso.
+        I am passionate about building structured, scalable, and reliable mobile applications.
+    </p>
+
+    <h3>Leave a Message</h3>
+
+    <form id="contactForm">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username">
+
+        <br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40"></textarea>
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="resultMessage"></p>
+
+    <audio id="bgm">
+        <source src="assets/audio/background.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <hr>
+
+    <footer>
+        <p>2026 Android Development Guide | Yuan He</p>
+    </footer>
+
+    <div id="imageModal" style="display:none;">
+        <span id="closeBtn">×</span>
+        <img id="modalImg">
+    </div>
+
+    <script src="js/bgm.js"></script>
+     <script src="js/bigger_pic.js"></script>
+     <script src="js/theme.js"></script>
+    <script>
+        const contactForm = document.getElementById("contactForm");
+        const usernameInput = document.getElementById("username");
+        const messageInput = document.getElementById("message");
+        const resultMessage = document.getElementById("resultMessage");
+
+        if (contactForm && usernameInput && messageInput && resultMessage) {
+            contactForm.addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                const username = usernameInput.value.trim();
+                const message = messageInput.value.trim();
+
+                if (username === "" || message === "") {
+                    alert("Username and message cannot be empty.");
+                    resultMessage.textContent = "";
+                } else {
+                    alert("Message submitted successfully!");
+                    resultMessage.textContent = "Thank you, " + username + ". Your message has been received.";
+
+                    usernameInput.value = "";
+                    messageInput.value = "";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>

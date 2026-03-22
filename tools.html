@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Guide To Android Development</title>
+    <link rel="icon" href="assets/favicon/favi.jpeg">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/bgm.css">
+    <link rel="stylesheet" href="css/pic.css">
+</head>
+
+<body>
+
+    <table width="100%">
+        <tr>
+            <td>
+                <h2>Guide To Android Development</h2>
+            </td>
+            <td align="right">
+                <a href="index.html">Home</a> |
+                <a href="procedure.html">Procedure</a> |
+                <a href="contact.html">Contact Me</a> |
+
+                <img id="bgmBtn"
+                     src="assets/volume-off.png"
+                     alt="BGM Control">
+            </td>
+        </tr>
+    </table>
+
+    <div class="theme-panel">
+        <p>Theme:</p>
+        <button class="theme-btn" data-theme="theme1">Red</button>
+        <button class="theme-btn" data-theme="theme2">Gray</button>
+        <button class="theme-btn" data-theme="theme3">Green</button>
+    </div>
+
+    <hr>
+
+    <h1 align="left">Tools</h1>
+
+    <ol>
+
+        <li>
+            <h3>Android Studio</h3>
+
+            <ul>
+                <li>Official IDE for Android development</li>
+                <li>Built-in emulator and debugging tools</li>
+                <li>Layout editor for XML design</li>
+                <li>Performance monitoring features</li>
+            </ul>
+
+            <img class="clickable-img"
+                 src="assets/img/Android_Studio.png"
+                 alt="Android Studio Interface Example"
+                 width="400"
+                 height="300"
+                 data-link="https://developer.android.com/studio">
+
+            <p><small>Click the image to enlarge, then click again to visit the official website.</small></p>
+        </li>
+
+        <li>
+            <h3>Firebase</h3>
+
+            <ul>
+                <li>Provides real-time database</li>
+                <li>User authentication service</li>
+                <li>Cloud storage integration</li>
+                <li>Easy backend setup</li>
+            </ul>
+
+            <img class="clickable-img"
+                 src="assets/img/firebase.jpg"
+                 alt="Firebase Console Interface"
+                 width="400"
+                 height="300"
+                 data-link="https://firebase.google.com/">
+
+            <p><small>Click the image to enlarge, then click again to visit the official website.</small></p>
+        </li>
+
+        <li>
+            <h3>Git</h3>
+
+            <ul>
+                <li>Version control system</li>
+                <li>Tracks code changes</li>
+                <li>Supports team collaboration</li>
+                <li>Allows rollback to previous versions</li>
+            </ul>
+
+            <img class="clickable-img"
+                 src="assets/img/git.png"
+                 alt="Git version control system"
+                 width="400"
+                 height="300"
+                 data-link="https://git-scm.com/">
+
+            <p><small>Click the image to enlarge, then click again to visit the official website.</small></p>
+        </li>
+
+        <li>
+            <h3>Android Emulator</h3>
+
+            <ul>
+                <li>Simulates Android devices</li>
+                <li>Tests different screen sizes</li>
+                <li>Debugging without physical device</li>
+                <li>Supports multiple Android versions</li>
+            </ul>
+
+            <img class="clickable-img"
+                 src="assets/img/android_emulator.png"
+                 alt="Android Emulator running example"
+                 width="400"
+                 height="300"
+                 data-link="https://developer.android.com/studio/run/emulator">
+
+            <p><small>Click the image to enlarge, then click again to learn more.</small></p>
+        </li>
+
+        <li>
+            <h3>Espresso Testing Framework</h3>
+
+            <ul>
+                <li>UI testing automation</li>
+                <li>Ensures interface stability</li>
+                <li>Integrated with Android Studio</li>
+                <li>Improves application reliability</li>
+            </ul>
+
+            <img class="clickable-img"
+                 src="assets/img/android_espresso.png"
+                 alt="Espresso UI testing example"
+                 width="400"
+                 height="300"
+                 data-link="https://developer.android.com/training/testing/espresso">
+
+            <p><small>Click the image to enlarge, then click again to visit the documentation.</small></p>
+        </li>
+
+    </ol>
+
+    <audio id="bgm">
+        <source src="assets/audio/background.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <hr>
+
+    <footer>
+        <p>2026 Android Development Guide | Yuan He</p>
+    </footer>
+
+    <div id="imageModal" style="display:none;">
+        <span id="closeBtn">×</span>
+        <img id="modalImg">
+    </div>
+
+     <script src="js/bgm.js"></script>
+     <script src="js/bigger_pic.js"></script>
+     <script src="js/theme.js"></script>
+</body>
+
+</html>
