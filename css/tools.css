@@ -1,0 +1,186 @@
+
+.tools-page {
+    margin: 24px 0 30px 0;
+}
+ 
+.tools-intro {
+    background-color: #ffffff;
+    padding: 24px 28px;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+    margin-bottom: 36px;
+    border: 1px solid #e5e7eb;
+    border-left: 5px solid #1a56db;
+}
+ 
+.tools-intro h1 {
+    color: #1a56db;
+}
+ 
+/* ============================================================
+   ALTERNATING GALLERY
+   ============================================================ */
+.tools-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 36px;
+}
+ 
+.gallery-item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 36px 28px;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+    transition: box-shadow 0.25s ease, transform 0.2s ease;
+    /* Odd items: text left, image right (default) */
+    flex-direction: row;
+}
+ 
+/* Even items shifted down slightly for stagger effect */
+.gallery-item:nth-child(even) {
+    margin-top: -8px;
+    margin-bottom: 28px;
+}
+ 
+.gallery-item:hover {
+    box-shadow: 0 8px 28px rgba(26, 86, 219, 0.14);
+    transform: translateY(-2px);
+}
+ 
+/* Reversed: image left, text right */
+.gallery-item.reversed {
+    flex-direction: row-reverse;
+}
+ 
+.gallery-text {
+    flex: 1 1 45%;
+    min-width: 0;
+}
+ 
+.gallery-text h3 {
+    color: #1a56db;
+    font-size: 1.25rem;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eff6ff;
+}
+ 
+.gallery-text ul {
+    padding-left: 20px;
+    margin: 0;
+}
+ 
+.gallery-text ul li {
+    margin-bottom: 8px;
+    color: #374151;
+    font-size: 15px;
+}
+ 
+.gallery-figure {
+    flex: 1 1 50%;
+    min-width: 0;
+    margin: 0;
+}
+ 
+.gallery-figure img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+    border: 2px solid #bfdbfe;
+    padding: 4px;
+    margin-bottom: 0;
+    background-color: #ffffff;
+    transition: border-color 0.2s ease;
+}
+ 
+.gallery-item:hover .gallery-figure img {
+    border-color: #1a56db;
+}
+ 
+.gallery-figure figcaption {
+    font-size: 13px;
+    color: #6b7280;
+    font-style: italic;
+    text-align: center;
+    margin-top: 8px;
+}
+ 
+/* ============================================================
+   TABLE SECTION
+   ============================================================ */
+.tools-table-section {
+    background-color: #ffffff;
+    padding: 24px 28px;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+    border: 1px solid #e5e7eb;
+}
+ 
+.tools-table-section h3 {
+    color: #1a56db;
+    border-bottom: 2px solid #eff6ff;
+    padding-bottom: 10px;
+    margin-bottom: 16px;
+}
+ 
+.tools-table {
+    width: 100%;
+}
+ 
+.tools-table th,
+.tools-table td {
+    border: 1px solid #d1d5db;
+    padding: 13px 16px;
+    text-align: left;
+    vertical-align: top;
+}
+ 
+.tools-table th {
+    background: linear-gradient(135deg, #1a56db, #1e429f);
+    color: #ffffff;
+    font-weight: 600;
+}
+ 
+.tools-table tr:nth-child(even) td {
+    background-color: #f8faff;
+}
+ 
+.tools-table tr:hover td {
+    background-color: #eff6ff;
+    transition: background-color 0.15s ease;
+}
+ 
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 900px) {
+    .gallery-item,
+    .gallery-item.reversed {
+        flex-direction: column;
+        margin-top: 0;
+    }
+ 
+    .gallery-figure img {
+        height: 220px;
+    }
+}
+ 
+@media (max-width: 600px) {
+    .tools-intro,
+    .gallery-item,
+    .tools-table-section {
+        padding: 16px;
+    }
+ 
+    .gallery-figure img {
+        height: 180px;
+    }
+}
