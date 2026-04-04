@@ -6,160 +6,161 @@
     <title>Guide To Android Development</title>
     <link rel="icon" href="assets/favicon/favi.jpeg">
      <link rel="stylesheet" href="css/theme.css">
+     <link rel="stylesheet" href="css/procedure.css">
     <link rel="stylesheet" href="css/bgm.css">
     <link rel="stylesheet" href="css/pic.css">
 </head>
 
 <body>
 
-    <table width="100%">
-        <tr>
-            <td>
-                <h2>Guide To Android Development</h2>
-            </td>
-            <td align="right">
-                <a href="index.html">Home</a> |
-                <a href="tools.html">Tools</a> |
-                <a href="contact.html">Contact Me</a> |
-
-                <img id="bgmBtn"
-                     src="assets/volume-off.png"
-                     alt="BGM Control">
-            </td>
-        </tr>
-    </table>
+   <nav class="navbar">
+        <h2 class="nav-title">Guide To Android Development</h2>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="procedure.html">Procedure</a>
+            <a href="tools.html">Tools</a>
+            <a href="contact.html">Contact Me</a>
+            <img id="bgmBtn" src="assets/volume-off.png" alt="BGM Control">
+        </div>
+    </nav>
 
     <div class="theme-panel">
-        <p>Theme:</p>
-        <button class="theme-btn" data-theme="theme1">Red</button>
-        <button class="theme-btn" data-theme="theme2">Gray</button>
-        <button class="theme-btn" data-theme="theme3">Green</button>
+    <p>Theme:</p>
+    <button class="theme-btn" data-theme="theme1" aria-label="Switch to Red theme">Red</button>
+    <button class="theme-btn" data-theme="theme2" aria-label="Switch to Gray theme">Gray</button>
+    <button class="theme-btn" data-theme="theme3" aria-label="Switch to Green theme">Green</button>
     </div>
+    
+    <hr aria-hidden="true">
 
-    <hr>
+   <div class="page-container">
+    <div class="procedure-page">
+        <section class="procedure-intro">
+            <h1>How To Start</h1>
+            <p>This page explains the main stages of Android development, from the first idea to the final testing and deployment process.</p>
+        </section>
 
-    <h1 align="left">How To Start</h1>
+        <ol class="procedure-list">
+            <li class="procedure-step">
+                <div class="step-media">
+                    
+                    <iframe src="https://www.youtube.com/embed/2qlcY9LkFik"
+                            title="Idea Planning"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                </div>
+                <div class="step-text">
+                    <span class="step-number">Step 1</span>
+                    <h3>Idea Planning</h3>
+                    <p class="contents">
+                        Before writing any code, the first step is to clearly define the purpose of the application.
+                        During this stage, you should decide what problem the app will solve, who the target users are, and what main features need to be included.
+                        This may involve sketching basic ideas on paper or listing required functionalities.
+                        Planning is important because it prevents unnecessary changes later in development.
+                        Without proper planning, developers often add features randomly, which makes the application difficult to maintain.
+                        A well-defined plan ensures that development remains focused and structured.
+                    </p>
+                </div>
+            </li>
 
-    <ol>
+            <li class="procedure-step">
+                <div class="step-media">
+                    <iframe src="https://www.youtube.com/embed/wIuVvCuiJhU"
+                            title="User Interface Design"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                </div>
+                <div class="step-text">
+                    <span class="step-number">Step 2</span>
+                    <h3>User Interface Design</h3>
+                    <p class="contents">
+                        After defining the app’s purpose, the next step is designing the user interface.
+                        This involves creating layouts using XML in Android Studio and deciding how users will interact with the app.
+                        Developers must consider usability, clarity, and visual consistency.
+                        UI design matters because users judge an application quickly based on its interface.
+                        Even if the backend logic is strong, poor design may reduce user engagement.
+                        A clear and intuitive layout improves user experience and makes the application easier to navigate.
+                    </p>
+                </div>
+            </li>
 
-        <li>
-            Ideal Planning
-            <br><br>
+            <li class="procedure-step">
+                <div class="step-media">
+                    <iframe src="https://www.youtube.com/embed/p0ItPcqqXog"
+                            title="Implementation in Android Studio"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                </div>
+                <div class="step-text">
+                    <span class="step-number">Step 3</span>
+                    <h3>Implementation in Android Studio</h3>
+                    <p class="contents">
+                        At this stage, developers begin writing the core functionality using Java or Kotlin.
+                        This includes setting up activities, handling user input, and implementing application logic.
+                        Developers connect UI components to backend logic and ensure all features work as expected.
+                        Implementation should follow the plan created earlier.
+                        Writing code in a structured way improves readability and maintainability.
+                        Clean code also reduces bugs and makes future updates easier.
+                    </p>
+                </div>
+            </li>
 
-            <iframe width="400" height="300"
-                    src="https://www.youtube.com/embed/2qlcY9LkFik"
-                    title="YouTube video player"
-                    frameborder="0"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
+            <li class="procedure-step">
+                <div class="step-media">
+                    <video controls aria-label="Firebase backend integration demonstration">
+                       <source src="assets/video/firebase.mp4" type="video/mp4">
+                       <p>Your browser does not support the video element. This video demonstrates Firebase backend integration.</p>
+                    </video>
+                </div>
+                <div class="step-text">
+                    <span class="step-number">Step 4</span>
+                    <h3>Backend Integration</h3>
+                    <p class="contents">
+                        Many Android applications require data storage or user authentication.
+                        In this stage, developers integrate backend services such as Firebase.
+                        This may include setting up databases, authentication systems, and cloud storage.
+                        Integration is important because modern apps rely on dynamic data.
+                        Without proper backend structure, applications may become unreliable or insecure.
+                        Using established tools such as Firebase improves data management and scalability.
+                    </p>
+                </div>
+            </li>
 
-            <p>
-                Before writing any code, the first step is to clearly define the purpose of the application.
-                During this stage, you should decide what problem the app will solve, who the target users are, and what main features need to be included.
-                This may involve sketching basic ideas on paper or listing required functionalities. Planning is important because it prevents unnecessary changes later in development.
-                Without proper planning, developers often add features randomly, which makes the application difficult to maintain.
-                A well-defined plan ensures that development remains focused and structured.
-            </p>
-        </li>
-
-        <br>
-
-        <li>
-            User Interface Design
-            <br><br>
-
-            <iframe width="400" height="300"
-                    src="https://www.youtube.com/embed/wIuVvCuiJhU"
-                    title="User Interface Design"
-                    frameborder="0"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-
-            <p>
-                After defining the app’s purpose, the next step is designing the user interface.
-                This involves creating layouts using XML in Android Studio and deciding how users will interact with the app.
-                Developers must consider usability, clarity, and visual consistency.
-                UI design matters because users judge an application quickly based on its interface.
-                Even if the backend logic is strong, poor design may reduce user engagement.
-                A clear and intuitive layout improves user experience and makes the application easier to navigate.
-            </p>
-        </li>
-
-        <br>
-
-        <li>
-            Implementation in Android Studio
-            <br><br>
-
-            <iframe width="400" height="300"
-                    src="https://www.youtube.com/embed/p0ItPcqqXog"
-                    title="Implementation in Android Studio"
-                    frameborder="0"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-
-            <p>
-                At this stage, developers begin writing the core functionality using Java or Kotlin.
-                This includes setting up activities, handling user input, and implementing application logic.
-                Developers connect UI components to backend logic and ensure all features work as expected.
-                Implementation should follow the plan created earlier. Writing code in a structured way improves readability and maintainability.
-                Clean code also reduces bugs and makes future updates easier.
-            </p>
-        </li>
-
-        <br>
-
-        <li>
-            Backend Integration
-            <br><br>
-
-            <video width="400" height="300" controls>
-                <source src="assets/video/firebase.mp4" type="video/mp4">
-            </video>
-
-            <p>
-                Many Android applications require data storage or user authentication.
-                In this stage, developers integrate backend services such as Firebase.
-                This may include setting up databases, authentication systems, and cloud storage.
-                Integration is important because modern apps rely on dynamic data.
-                Without proper backend structure, applications may become unreliable or insecure.
-                Using established tools such as Firebase improves data management and scalability.
-            </p>
-        </li>
-
-        <li>
-            Testing and Deployment
-            <br><br>
-
-            <video width="400" height="300" controls>
-                <source src="assets/video/espresso_test.mp4" type="video/mp4">
-            </video>
-
-            <p>
-                Before releasing an application, developers must thoroughly test it.
-                Testing includes checking for crashes, fixing layout issues, validating user flows, and performing UI tests such as Espresso testing.
-                Testing ensures stability and reliability. Without proper testing, users may encounter bugs that damage trust.
-                Once testing is complete, the app can be prepared for deployment.
-                Deployment may involve generating signed APK files and publishing through official platforms.
-            </p>
-        </li>
-
-    </ol>
+            <li class="procedure-step">
+                <div class="step-media">
+                    <video controls>
+                    <source src="assets/video/espresso_test.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="step-text">
+                    <span class="step-number">Step 5</span>
+                    <h3>Testing and Deployment</h3>
+                    <p class="contents">
+                        Before releasing an application, developers must thoroughly test it.
+                        Testing includes checking for crashes, fixing layout issues, validating user flows, and performing UI tests such as Espresso testing.
+                        Testing ensures stability and reliability.
+                        Without proper testing, users may encounter bugs that damage trust.
+                        Once testing is complete, the app can be prepared for deployment.
+                        Deployment may involve generating signed APK files and publishing through official platforms.
+                    </p>
+                </div>
+            </li>
+        </ol>
+    </div>
+</div>
 
     <audio id="bgm">
         <source src="assets/audio/background.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
-    <hr>
-
     <footer>
         <p>2026 Android Development Guide | Yuan He</p>
     </footer>
 
-    <div id="imageModal" style="display:none;">
-        <span id="closeBtn">×</span>
-        <img id="modalImg">
+    <div id="imageModal">
+        <span id="closeBtn" role="button" aria-label="Close image">×</span>
+        <img id="modalImg" alt="Enlarged view">
     </div>
 
      <script src="js/bgm.js"></script>

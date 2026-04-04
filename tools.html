@@ -6,163 +6,194 @@
     <title>Guide To Android Development</title>
     <link rel="icon" href="assets/favicon/favi.jpeg">
     <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/tools.css">
     <link rel="stylesheet" href="css/bgm.css">
     <link rel="stylesheet" href="css/pic.css">
 </head>
 
 <body>
 
-    <table width="100%">
-        <tr>
-            <td>
-                <h2>Guide To Android Development</h2>
-            </td>
-            <td align="right">
-                <a href="index.html">Home</a> |
-                <a href="procedure.html">Procedure</a> |
-                <a href="contact.html">Contact Me</a> |
-
-                <img id="bgmBtn"
-                     src="assets/volume-off.png"
-                     alt="BGM Control">
-            </td>
-        </tr>
-    </table>
+    <nav class="navbar">
+        <h2 class="nav-title">Guide To Android Development</h2>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="procedure.html">Procedure</a>
+            <a href="tools.html">Tools</a>
+            <a href="contact.html">Contact Me</a>
+            <img id="bgmBtn" src="assets/volume-off.png" alt="BGM Control">
+        </div>
+    </nav>
 
     <div class="theme-panel">
-        <p>Theme:</p>
-        <button class="theme-btn" data-theme="theme1">Red</button>
-        <button class="theme-btn" data-theme="theme2">Gray</button>
-        <button class="theme-btn" data-theme="theme3">Green</button>
+    <p>Theme:</p>
+    <button class="theme-btn" data-theme="theme1" aria-label="Switch to Red theme">Red</button>
+    <button class="theme-btn" data-theme="theme2" aria-label="Switch to Gray theme">Gray</button>
+    <button class="theme-btn" data-theme="theme3" aria-label="Switch to Green theme">Green</button>
     </div>
 
-    <hr>
+   <hr aria-hidden="true">
 
-    <h1 align="left">Tools</h1>
+    <div class="page-container">
+        <div class="tools-page">
+            <section class="tools-intro">
+                <h1>Tools</h1>
+                <p>This page introduces several important tools used in Android development and explains their main roles in building, testing, and maintaining mobile applications.</p>
+            </section>
 
-    <ol>
+            <section class="tools-gallery">
 
-        <li>
-            <h3>Android Studio</h3>
+                <article class="gallery-item">
+                    <div class="gallery-text">
+                        <h3>Android Studio</h3>
+                        <ul>
+                            <li>Official IDE for Android development</li>
+                            <li>Built-in emulator and debugging tools</li>
+                            <li>Layout editor for XML design</li>
+                            <li>Performance monitoring features</li>
+                        </ul>
+                    </div>
+                    <figure class="gallery-figure">
+                        <img class="clickable-img"
+                             src="assets/img/Android_Studio.png"
+                             alt="Android Studio Interface Example"
+                             data-link="https://developer.android.com/studio">
+                        <figcaption>Click to enlarge, click again to visit the official website.</figcaption>
+                    </figure>
+                </article>
 
-            <ul>
-                <li>Official IDE for Android development</li>
-                <li>Built-in emulator and debugging tools</li>
-                <li>Layout editor for XML design</li>
-                <li>Performance monitoring features</li>
-            </ul>
+                <article class="gallery-item reversed">
+                    <div class="gallery-text">
+                        <h3>Firebase</h3>
+                        <ul>
+                            <li>Provides real-time database</li>
+                            <li>User authentication service</li>
+                            <li>Cloud storage integration</li>
+                            <li>Easy backend setup</li>
+                        </ul>
+                    </div>
+                    <figure class="gallery-figure">
+                        <img class="clickable-img"
+                             src="assets/img/firebase.jpg"
+                             alt="Firebase Console Interface"
+                             data-link="https://firebase.google.com/">
+                        <figcaption>Click to enlarge, click again to visit the official website.</figcaption>
+                    </figure>
+                </article>
 
-            <img class="clickable-img"
-                 src="assets/img/Android_Studio.png"
-                 alt="Android Studio Interface Example"
-                 width="400"
-                 height="300"
-                 data-link="https://developer.android.com/studio">
+                <article class="gallery-item">
+                    <div class="gallery-text">
+                        <h3>Git</h3>
+                        <ul>
+                            <li>Version control system</li>
+                            <li>Tracks code changes</li>
+                            <li>Supports team collaboration</li>
+                            <li>Allows rollback to previous versions</li>
+                        </ul>
+                    </div>
+                    <figure class="gallery-figure">
+                        <img class="clickable-img"
+                             src="assets/img/git.png"
+                             alt="Git version control system"
+                             data-link="https://git-scm.com/">
+                        <figcaption>Click to enlarge, click again to visit the official website.</figcaption>
+                    </figure>
+                </article>
 
-            <p><small>Click the image to enlarge, then click again to visit the official website.</small></p>
-        </li>
+                <article class="gallery-item reversed">
+                    <div class="gallery-text">
+                        <h3>Android Emulator</h3>
+                        <ul>
+                            <li>Simulates Android devices</li>
+                            <li>Tests different screen sizes</li>
+                            <li>Debugging without physical device</li>
+                            <li>Supports multiple Android versions</li>
+                        </ul>
+                    </div>
+                    <figure class="gallery-figure">
+                        <img class="clickable-img"
+                             src="assets/img/android_emulator.png"
+                             alt="Android Emulator running example"
+                             data-link="https://developer.android.com/studio/run/emulator">
+                        <figcaption>Click to enlarge, click again to learn more.</figcaption>
+                    </figure>
+                </article>
 
-        <li>
-            <h3>Firebase</h3>
+                <article class="gallery-item">
+                    <div class="gallery-text">
+                        <h3>Espresso Testing Framework</h3>
+                        <ul>
+                            <li>UI testing automation</li>
+                            <li>Ensures interface stability</li>
+                            <li>Integrated with Android Studio</li>
+                            <li>Improves application reliability</li>
+                        </ul>
+                    </div>
+                    <figure class="gallery-figure">
+                        <img class="clickable-img"
+                             src="assets/img/android_espresso.png"
+                             alt="Espresso UI testing example"
+                             data-link="https://developer.android.com/training/testing/espresso">
+                        <figcaption>Click to enlarge, click again to visit the documentation.</figcaption>
+                    </figure>
+                </article>
 
-            <ul>
-                <li>Provides real-time database</li>
-                <li>User authentication service</li>
-                <li>Cloud storage integration</li>
-                <li>Easy backend setup</li>
-            </ul>
+            </section>
 
-            <img class="clickable-img"
-                 src="assets/img/firebase.jpg"
-                 alt="Firebase Console Interface"
-                 width="400"
-                 height="300"
-                 data-link="https://firebase.google.com/">
-
-            <p><small>Click the image to enlarge, then click again to visit the official website.</small></p>
-        </li>
-
-        <li>
-            <h3>Git</h3>
-
-            <ul>
-                <li>Version control system</li>
-                <li>Tracks code changes</li>
-                <li>Supports team collaboration</li>
-                <li>Allows rollback to previous versions</li>
-            </ul>
-
-            <img class="clickable-img"
-                 src="assets/img/git.png"
-                 alt="Git version control system"
-                 width="400"
-                 height="300"
-                 data-link="https://git-scm.com/">
-
-            <p><small>Click the image to enlarge, then click again to visit the official website.</small></p>
-        </li>
-
-        <li>
-            <h3>Android Emulator</h3>
-
-            <ul>
-                <li>Simulates Android devices</li>
-                <li>Tests different screen sizes</li>
-                <li>Debugging without physical device</li>
-                <li>Supports multiple Android versions</li>
-            </ul>
-
-            <img class="clickable-img"
-                 src="assets/img/android_emulator.png"
-                 alt="Android Emulator running example"
-                 width="400"
-                 height="300"
-                 data-link="https://developer.android.com/studio/run/emulator">
-
-            <p><small>Click the image to enlarge, then click again to learn more.</small></p>
-        </li>
-
-        <li>
-            <h3>Espresso Testing Framework</h3>
-
-            <ul>
-                <li>UI testing automation</li>
-                <li>Ensures interface stability</li>
-                <li>Integrated with Android Studio</li>
-                <li>Improves application reliability</li>
-            </ul>
-
-            <img class="clickable-img"
-                 src="assets/img/android_espresso.png"
-                 alt="Espresso UI testing example"
-                 width="400"
-                 height="300"
-                 data-link="https://developer.android.com/training/testing/espresso">
-
-            <p><small>Click the image to enlarge, then click again to visit the documentation.</small></p>
-        </li>
-
-    </ol>
+            <section class="tools-table-section">
+                <h3>Tool Comparison Table</h3>
+                <table class="content-table tools-table">
+                    <tr>
+                        <th>Tool</th>
+                        <th>Main Purpose</th>
+                        <th>Example Use</th>
+                    </tr>
+                    <tr>
+                        <td>Android Studio</td>
+                        <td>Build and debug Android applications</td>
+                        <td>Create layouts, run apps, and inspect code</td>
+                    </tr>
+                    <tr>
+                        <td>Firebase</td>
+                        <td>Support backend services</td>
+                        <td>Authentication, database, and cloud storage</td>
+                    </tr>
+                    <tr>
+                        <td>Git</td>
+                        <td>Track project history and collaboration</td>
+                        <td>Save versions and manage teamwork</td>
+                    </tr>
+                    <tr>
+                        <td>Android Emulator</td>
+                        <td>Test apps without a physical device</td>
+                        <td>Preview different screen sizes and Android versions</td>
+                    </tr>
+                    <tr>
+                        <td>Espresso</td>
+                        <td>Automate UI testing</td>
+                        <td>Verify user flows and interface stability</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </div>
 
     <audio id="bgm">
         <source src="assets/audio/background.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
-    <hr>
-
     <footer>
         <p>2026 Android Development Guide | Yuan He</p>
     </footer>
 
-    <div id="imageModal" style="display:none;">
-        <span id="closeBtn">×</span>
-        <img id="modalImg">
+    <div id="imageModal">
+        <span id="closeBtn" role="button" aria-label="Close image">×</span>
+        <img id="modalImg" alt="Enlarged view">
     </div>
 
-     <script src="js/bgm.js"></script>
-     <script src="js/bigger_pic.js"></script>
-     <script src="js/theme.js"></script>
+    <script src="js/bgm.js"></script>
+    <script src="js/bigger_pic.js"></script>
+    <script src="js/theme.js"></script>
 </body>
 
 </html>
